@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class FooterCard extends StatelessWidget {
   const FooterCard({
@@ -11,7 +10,7 @@ class FooterCard extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.all(13.0),
       child: Container(
-        height: 113.h,
+        height: 113,
         width: double.infinity,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(15),
@@ -41,9 +40,9 @@ class FooterCard extends StatelessWidget {
                   style: TextStyle(fontSize: 23, fontWeight: FontWeight.w600),
                 ),
                 Container(
-                  width: 1.0, // Width of the line
-                  height: 20.h, // Height of the line
-                  color: Colors.black, // Color of the line
+                  width: 1.0,
+                  height: 20,
+                  color: Colors.black,
                 ),
                 const Text(
                   "Unforgettable",

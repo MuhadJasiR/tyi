@@ -1,14 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 Widget kWidth(double width) {
-  return SizedBox(
-    width: 10.w,
+  return const SizedBox(
+    width: 10,
   );
 }
 
 Widget kHeight(double height) {
-  return SizedBox(
-    height: 10.h,
+  return const SizedBox(
+    height: 10,
   );
 }

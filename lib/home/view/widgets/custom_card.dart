@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../constants/colors/Colors.dart';
 
@@ -16,8 +15,8 @@ class CustomCards extends StatelessWidget {
         Stack(
           children: [
             SizedBox(
-              height: 165.h,
-              width: 145.w,
+              height: 165,
+              width: 145,
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(10),
                 child: Image.asset(
@@ -34,8 +33,8 @@ class CustomCards extends StatelessWidget {
                   decoration: BoxDecoration(
                       color: Colors.white,
                       borderRadius: BorderRadius.circular(10)),
-                  height: 47.h,
-                  width: 131.w,
+                  height: 47,
+                  width: 131,
                   child: GestureDetector(
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -47,13 +46,13 @@ class CustomCards extends StatelessWidget {
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: [
-                            Text(
+                            const Text(
                               "Make birthday magical with\nour creative decoration",
-                              style: TextStyle(fontSize: 7.sp),
+                              style: TextStyle(fontSize: 7),
                             ),
                             Container(
-                              height: 15.h,
-                              width: 15.w,
+                              height: 15,
+                              width: 15,
                               decoration: BoxDecoration(
                                   color: kMainColor,
                                   borderRadius: BorderRadius.circular(5)),
@@ -76,8 +75,8 @@ class CustomCards extends StatelessWidget {
         Stack(
           children: [
             SizedBox(
-              height: 165.h,
-              width: 145.w,
+              height: 165,
+              width: 145,
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(10),
                 child: Image.asset(
@@ -94,8 +93,8 @@ class CustomCards extends StatelessWidget {
                   decoration: BoxDecoration(
                       color: Colors.white,
                       borderRadius: BorderRadius.circular(10)),
-                  height: 47.h,
-                  width: 131.w,
+                  height: 47,
+                  width: 131,
                   child: GestureDetector(
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -107,13 +106,13 @@ class CustomCards extends StatelessWidget {
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: [
-                            Text(
+                            const Text(
                               "Crafting enchanting\nsettings for your special ",
-                              style: TextStyle(fontSize: 7.sp),
+                              style: TextStyle(fontSize: 7),
                             ),
                             Container(
-                              height: 15.h,
-                              width: 15.w,
+                              height: 15,
+                              width: 15,
                               decoration: BoxDecoration(
                                   color: kMainColor,
                                   borderRadius: BorderRadius.circular(5)),

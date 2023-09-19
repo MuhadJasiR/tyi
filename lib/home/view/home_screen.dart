@@ -1,6 +1,5 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:provider/provider.dart';
 import 'package:tyi/constants/colors/Colors.dart';
 import 'package:tyi/constants/size/size.dart';
@@ -18,13 +17,16 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final width = MediaQuery.sizeOf(context).width;
+    final height = MediaQuery.sizeOf(context).height;
+
     return Scaffold(
       body: ListView(
         children: [
           Column(
             children: [
               SizedBox(
-                height: 340.h,
+                height: height * 0.4,
                 child: Stack(
                   children: [
                     Column(
@@ -94,7 +96,7 @@ class HomeScreen extends StatelessWidget {
                                   options: CarouselOptions(
                                     enlargeCenterPage: true,
                                     viewportFraction: 1,
-                                    height: 151.0.h,
+                                    height: 151.0,
                                     onPageChanged: (index, reason) {
                                       value.currentIndex = index;
                                       value.notifyListeners();
@@ -108,9 +110,7 @@ class HomeScreen extends StatelessWidget {
                                     return Builder(
                                       builder: (BuildContext context) {
                                         return Container(
-                                            width: MediaQuery.of(context)
-                                                .size
-                                                .width,
+                                            width: width * 0.9,
                                             margin: const EdgeInsets.symmetric(
                                                 horizontal: 5.0),
                                             decoration: BoxDecoration(
@@ -150,14 +150,14 @@ class HomeScreen extends StatelessWidget {
               ),
             ],
           ),
-          CustomPurpleContainer(
-            imageUrl: const ['assets/image4.png', 'assets/image6.png'],
-            title: const ['Decoration', "Party arrangement"],
+          const CustomPurpleContainer(
+            imageUrl: ['assets/image4.png', 'assets/image6.png'],
+            title: ['Decoration', "Party arrangement"],
           ),
           kHeight(10),
-          CustomPurpleContainer(
-            imageUrl: const ['assets/image5.png', 'assets/image7.png'],
-            title: const ['Wedding', "Corporate events"],
+          const CustomPurpleContainer(
+            imageUrl: ['assets/image5.png', 'assets/image7.png'],
+            title: ['Wedding', "Corporate events"],
           ),
           kHeight(10),
           Padding(
@@ -203,8 +203,8 @@ class HomeScreen extends StatelessWidget {
             child: ElevatedButton(
                 style: ButtonStyle(
                     backgroundColor: MaterialStateProperty.all(kMainColor),
-                    fixedSize:
-                        MaterialStateProperty.all(Size(double.infinity, 40.h))),
+                    fixedSize: MaterialStateProperty.all(
+                        const Size(double.infinity, 40))),
                 onPressed: () {},
                 child: const Text("Quick Service Request")),
           ),

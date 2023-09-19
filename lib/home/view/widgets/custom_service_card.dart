@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../constants/colors/Colors.dart';
 
@@ -21,7 +20,7 @@ class CustomServiceCards extends StatelessWidget {
         decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(10),
             border: Border.all(color: Colors.grey.shade300, width: 2)),
-        height: 64.h,
+        height: 64,
         width: double.infinity,
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -49,8 +48,8 @@ class CustomServiceCards extends StatelessWidget {
               ],
             ),
             Container(
-              height: 25.h,
-              width: 25.w,
+              height: 25,
+              width: 25,
               decoration: BoxDecoration(
                   color: kMainColor, borderRadius: BorderRadius.circular(5)),
               child: const Icon(
